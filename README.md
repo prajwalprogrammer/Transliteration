@@ -29,7 +29,6 @@
 
   python manage.py runserver
   
-
 ## Demo Video
 
 
