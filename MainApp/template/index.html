@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TRANSLITERATION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <h1>TRANSLITERATION</h1>
+    <h2 style="text-decoration: underline red;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;">Translate regional language content</h2>
+    <h2 style="text-decoration: underline red;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;"> to English</h2>
+    
+    <div
+      id="controls"
+      style="
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        border: 2px solid rgb(223, 41, 16);
+        margin-top: 40px;
+        justify-self: center;
+        align-items: center;
+        padding:12px;
+        -webkit-box-shadow: 5px 5px 11px -6px #000000; 
+        box-shadow: 5px 5px 11px -6px #000000;
+        -webkit-border-radius: 19px 19px 19px 19px;
+        -moz-border-radius: 19px 19px 19px 19px;
+        border-radius: 19px 19px 19px 19px;
+      "
+    >
+    <h2
+      style="
+        font-weight: bold;
+        color: #1d1e1f;
+        font-size: 140%;
+        text-transform: uppercase;
+        text-align: center;
+      "
+    >
+      Enter Your Text
+    </h2>
+      <form action="." method="POST">
+        {% csrf_token %}
+        <input
+          style="flex-grow: 1; height: 3.5rem;
+          margin: 10px; min-width: 31rem"
+          id=""
+          type="textarea"
+          class="area"
+          placeholder="Enter Text"
+          name="your_name"
+          value="{{ current_name }}"
+        />
+        <button id="" style="padding: 20px;align-items: center;" type="submit">Translate To English</button>
+      </form>
+      <input
+        id=""
+        style="flex-grow: 1; height: 3.5rem;
+        margin: 10px; min-width: 31rem"
+        type="text"
+        disabled="disabled"
+        placeholder="English Translation"
+        name="your_result"
+        value="{{ result1 }}"
+      />
+    </div>
+
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>
