@@ -5,27 +5,27 @@
 
 ## Steps to run the project:
 
-> #### Clone the Repository
+#### Clone the Repository
 
  Git Clone https://github.com/prajwalprogrammer/Transliteration.git
 
-> #### Create Virtual Environment
+#### Create Virtual Environment
   
    `python3 -m venv transliteration`
    
-> #### Activate Virtual Environment
+   #### Activate Virtual Environment
 
   `translation\Scripts\activate`
 
-> #### Install Django
+#### Install Django
 
- `cd MainApp > pip install django`
+ `pip install django`
 
-> #### Install Packages
+#### Install Packages
 
   `pip install -r requirements.txt`
 
-> #### Run Application
+#### Run Application
 
   `python manage.py runserver`
   
