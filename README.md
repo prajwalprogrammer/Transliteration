@@ -3,7 +3,7 @@
 
 #### This is Translate Regional Language Content to English.
 
-## How To Install
+## Steps to run the project:
 
 #### Clone the Repository
 
