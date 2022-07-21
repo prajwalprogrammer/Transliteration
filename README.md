@@ -1,7 +1,7 @@
 # Transliteration
 ### (For Codefiesta) 
 #### Please visit the below Github Link given below for updated and more accurate code) <br>
-https://github.com/RahulPonnuru/TranslitertionProject
+https://github.com/RahulPonnuru/TransliterationProject
 <br>
 <br>
 ## Transliteration Application using Python Django
